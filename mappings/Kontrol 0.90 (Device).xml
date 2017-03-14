@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device name="MIDIHub Port 1" version="666" author="BassApps" type="MIDI" decks="2">
+  <button note="0x21" value="127" name="PLAY1" deck="1" channel="0" />
+  <led note="0x21" name="LED_PLAY1" default="PLAY1" channel="0" />
+  <button note="0x32" value="127" name="PLAY2" deck="2" channel="0" />
+  <led note="0x32" name="LED_PLAY2" default="PLAY2" channel="0" />
+  
+  <button note="0x21" value="127" name="KEY1" deck="1" channel="2" />
+  <led note="0x21" name="KEYl" default="KEY1" channel="2" />
+  <button note="0x32" value="127" name="KEY2" deck="2" channel="2" />
+  <led note="0x32" name="KEYl" default="KEY2" channel="2" />
+  
+  <button note="0x2E" value="127" name="HEAR1" deck="1" channel="0" />
+  <led note="0x2E" name="LED_hear1" default="HEAR1" channel="0" />
+  <button note="0x3f" value="127" name="HEAR2" deck="2" channel="0" />
+  <led note="0x3f" name="LED_hear2" default="HEAR2" channel="0" />
+  
+  <button note="0x22" name="CUE1" deck="1" channel="0" />
+  <led note="0x22" name="CUE1l" default="CUE1" channel="0" />
+  <button note="0x33" name="CUE4" deck="2" channel="0" />
+  <led note="0x33" name="CUE4l" default="CUE4" channel="0" />
+  
+  <button note="0x09" name="CUE11" deck="1" channel="0" />
+  <led note="0x09" name="CUE11l" default="CUE11" channel="0" />
+  <button note="0x0a" name="CUE12" deck="1" channel="0" />
+  <led note="0x0a" name="CUE12l" default="CUE12" channel="0" />
+  <button note="0x0b" name="CUE13" deck="1" channel="0" />
+  <led note="0x0b" name="CUE13l" default="CUE13" channel="0" />
+  <button note="0x0c" name="CUE14" deck="1" channel="0" />
+  <led note="0x0c" name="CUE14l" default="CUE14" channel="0" />
+  
+  <button cc="0x09" name="CUE11d" deck="1" channel="0" />
+  <button cc="0x0a" name="CUE12d" deck="1" channel="0" />
+  <button cc="0x0b" name="CUE13d" deck="1" channel="0" />
+  <button cc="0x0c" name="CUE14d" deck="1" channel="0" />
+  
+  <button note="0x19" name="CUE21" deck="2" channel="0" />
+  <led note="0x19" name="CUE21l" default="CUE21" channel="0" />
+  <button note="0x1a" name="CUE22" deck="2" channel="0" />
+  <led note="0x1a" name="CUE22l" default="CUE22" channel="0" />
+  <button note="0x1b" name="CUE23" deck="2" channel="0" />
+  <led note="0x1b" name="CUE23l" default="CUE23" channel="0" />
+  <button note="0x1c" name="CUE24" deck="2" channel="0" />
+  <led note="0x1c" name="CUE24l" default="CUE24" channel="0" />
+  
+  <button cc="0x19" name="CUE21d" deck="2" channel="0" />
+  <button cc="0x1a" name="CUE22d" deck="2" channel="0" />
+  <button cc="0x1b" name="CUE23d" deck="2" channel="0" />
+  <button cc="0x1c" name="CUE24d" deck="2" channel="0" />
+  
+  <slider cc="0x3a" name="VOL1" deck="1" channel="0" />
+  <slider cc="0x4a" name="VOL2" deck="2" channel="0" />
+  <slider cc="0x3a" name="VOL3" deck="3" channel="4" />
+  <slider cc="0x4a" name="VOL4" deck="4" channel="4" />
+  
+  <slider cc="0x36" name="TMP1" deck="1" channel="0" />
+  <slider cc="0x38" name="TMP2" deck="2" channel="0" />
+  <slider cc="0x36" name="TMP3" deck="3" channel="4" />
+  <slider cc="0x38" name="TMP4" deck="4" channel="4" />
+  
+  <slider cc="0x42" name="F1" deck="1" channel="0" />
+  <slider cc="0x52" name="F2" deck="2" channel="0" />
+  <slider cc="0x42" name="F3" deck="3" channel="5" />
+  <slider cc="0x52" name="F4" deck="4" channel="5" />
+  
+  <slider cc="0x3c" name="L1" deck="1" channel="0" />
+  <slider cc="0x3e" name="L2" deck="1" channel="0" />
+  <slider cc="0x40" name="L3" deck="1" channel="0" />
+  
+  <slider cc="0x4c" name="R1" deck="2" channel="0" />
+  <slider cc="0x4e" name="R2" deck="2" channel="0" />
+  <slider cc="0x50" name="R3" deck="2" channel="0" />
+  
+  <slider cc="0x54" name="D1" deck="1" channel="0" />
+  <slider cc="0x55" name="D2" deck="2" channel="0" />
+  <slider cc="0x88" name="D3" deck="1" channel="0" />
+  <slider cc="0x88" name="D4" deck="2" channel="0" />
+  
+  <slider cc="0x03" name="Lf1" deck="1" channel="0" />
+  <slider cc="0x02" name="Lf2" deck="1" channel="0" />
+  <slider cc="0x01" name="Lf3" deck="1" channel="0" />
+  
+  <slider cc="0x13" name="Rf1" deck="2" channel="0" />
+  <slider cc="0x12" name="Rf2" deck="2" channel="0" />
+  <slider cc="0x11" name="Rf3" deck="2" channel="0" />
+  
+  <button note="0x04" value="127" name="FX1" deck="1" channel="0" />
+  <led cc="0x04" name="LED_fx1" default="FX1" channel="0" />
+  <button note="0x64" value="127" name="FX1b" deck="1" channel="0" />
+  
+  <button note="0x14" value="127" name="FX2" deck="1" channel="0" />
+  <led cc="0x65" name="LED_fx2" default="FX2" channel="0" />
+  <button note="0x65" value="127" name="FX2b" deck="2" channel="0" />
+  
+  <button cc="0x00" value="127" name="FX1L" deck="1" channel="1" />
+  <button cc="0x01" value="127" name="FX1R" deck="1" channel="1" />
+  
+  <button cc="0x02" value="127" name="FX2L" deck="2" channel="1" />
+  <button cc="0x03" value="127" name="FX2R" deck="2" channel="1" />
+  
+  <slider cc="0x34"	name="1SIZ" deck="1" channel="0" />
+  <slider cc="0x35"	name="2SIZ" deck="2" channel="0" />
+  
+  <button note="0x0D" value="127" name="1ENG" deck="1" channel="0" />
+  <led note="0x10" name="LED_1ENG" channel="0" />
+  <button note="0x1D" value="127" name="2ENG" deck="2" channel="0" />
+  <led note="0x20" name="LED_2ENG" channel="0" />
+  
+  <button note="0x45" value="127" name="BROWSE_UP" channel="0" />
+  <button note="0x46" value="127" name="BROWSE_DN" channel="0" />
+  <slider note="0x44" name="BROWSE_NV" channel="0" />
+  
+  <button note="0x24" value="127" name="BROWSE_A" channel="0" />
+  <button note="0x35" value="127" name="BROWSE_B" channel="0" />
+  <button note="0x24" value="127" name="BROWSE_C" channel="4" />
+  <button note="0x35" value="127" name="BROWSE_D" channel="4" />
+  
+  <slider cc="0x48" name="CROSSFADER" channel ="0" />
+  <jog cc="0x30" name="JOG_A" channel ="0" />
+  <jog cc="0x31" name="JOG_B" channel ="0" />
+
+  
+  
+  
+  
+  <button note="0x21" value="127" name="PLAY3" deck="3" channel="4" />
+  <led note="0x21" name="LED_PLAY3" default="PLAY3" channel="4" />
+  <button note="0x32" value="127" name="PLAY4" deck="4" channel="4" />
+  <led note="0x32" name="LED_PLAY4" default="PLAY4" channel="4" />
+  
+  <button note="0x21" value="127" name="KEY3" deck="3" channel="6" />
+  <led note="0x21" name="KEY3" default="KEY3" channel="6" />
+  <button note="0x32" value="127" name="KEY4" deck="4" channel="6" />
+  <led note="0x32" name="KEY4" default="KEY4" channel="6" />
+  
+  <button note="0x2E" value="127" name="HEAR3" deck="3" channel="4" />
+  <led note="0x2E" name="LED_hear3" default="HEAR3" channel="4" />
+  <button note="0x3f" value="127" name="HEAR4" deck="4" channel="4" />
+  <led note="0x3f" name="LED_hear4" default="HEAR4" channel="4" />
+  
+  <button note="0x22" name="CUE3" deck="3" channel="4" />
+  <led note="0x22" name="CUE3l" default="CUE3" channel="4" />
+  <button note="0x33" name="CUE4" deck="4" channel="4" />
+  <led note="0x33" name="CUE4l" default="CUE4" channel="4" />
+  
+  <button note="0x09" name="CUE31" deck="3" channel="4" />
+  <led note="0x09" name="CUE31l" default="CUE31" channel="4" />
+  <button note="0x0a" name="CUE32" deck="3" channel="4" />
+  <led note="0x0a" name="CUE32l" default="CUE32" channel="4" />
+  <button note="0x0b" name="CUE33" deck="3" channel="4" />
+  <led note="0x0b" name="CUE33l" default="CUE33" channel="4" />
+  <button note="0x0c" name="CUE34" deck="3" channel="4" />
+  <led note="0x0c" name="CUE34l" default="CUE34" channel="4" />
+  
+  <button cc="0x09" name="CUE31d" deck="3" channel="4" />
+  <button cc="0x0a" name="CUE32d" deck="3" channel="4" />
+  <button cc="0x0b" name="CUE33d" deck="3" channel="4" />
+  <button cc="0x0c" name="CUE34d" deck="3" channel="4" />
+  
+  <button note="0x19" name="CUE41" deck="4" channel="4" />
+  <led note="0x19" name="CUE41l" default="CUE41" channel="4" />
+  <button note="0x1a" name="CUE42" deck="4" channel="4" />
+  <led note="0x1a" name="CUE42l" default="CUE42" channel="4" />
+  <button note="0x1b" name="CUE43" deck="4" channel="4" />
+  <led note="0x1b" name="CUE43l" default="CUE43" channel="4" />
+  <button note="0x1c" name="CUE44" deck="4" channel="4" />
+  <led note="0x1c" name="CUE44l" default="CUE44" channel="4" />
+  
+  <button cc="0x19" name="CUE41d" deck="4" channel="4" />
+  <button cc="0x1a" name="CUE42d" deck="4" channel="4" />
+  <button cc="0x1b" name="CUE43d" deck="4" channel="4" />
+  <button cc="0x1c" name="CUE44d" deck="4" channel="4" />
+  
+  <jog cc="0x30" name="JOG_C" channel ="5" />
+  <jog cc="0x31" name="JOG_D" channel ="5" />
+  
+  <slider cc="0x34"	name="3SIZ" deck="3" channel="4" />
+  <slider cc="0x35"	name="4SIZ" deck="4" channel="4" />
+  
+  <button note="0x0D" value="127" name="3ENG" deck="3" channel="4" />
+  <led note="0x10" name="LED_3ENG" channel="4" />
+  <button note="0x1D" value="127" name="4ENG" deck="4" channel="4" />
+  <led note="0x20" name="LED_4ENG" channel="4" />
+  
+  <slider cc="0x3c" name="L1b" deck="3" channel="5" />
+  <slider cc="0x3e" name="L2b" deck="3" channel="5" />
+  <slider cc="0x40" name="L3b" deck="3" channel="5" />
+  
+  <slider cc="0x4c" name="R1b" deck="4" channel="5" />
+  <slider cc="0x4e" name="R2b" deck="4" channel="5" />
+  <slider cc="0x50" name="R3b" deck="4" channel="5" />
+  
+  <slider cc="0x03" name="Lf1b" deck="3" channel="5" />
+  <slider cc="0x02" name="Lf2b" deck="3" channel="5" />
+  <slider cc="0x01" name="Lf3b" deck="3" channel="5" />
+  
+  <slider cc="0x13" name="Rf1b" deck="4" channel="5" />
+  <slider cc="0x12" name="Rf2b" deck="4" channel="5" />
+  <slider cc="0x11" name="Rf3b" deck="4" channel="5" />
+  
+  <button note="0x04" value="127" name="FX3" deck="3" channel="4" />
+  <led cc="0x04" name="LED_fx3" default="FX3" channel="4" />
+  <button note="0x64" value="127" name="FX3b" deck="3" channel="4" />
+  
+  <button note="0x14" value="127" name="FX4" deck="4" channel="4" />
+  <led cc="0x65" name="LED_fx4" default="FX4" channel="4" />
+  <button note="0x65" value="127" name="FX4b" deck="4" channel="4" />
+  
+  <button note="0x23" value="127" name="SYNC1" deck="1" channel="0" />
+  <button note="0x34" value="127" name="SYNC2" deck="2" channel="0" />
+  <button note="0x23" value="127" name="SYNC3" deck="3" channel="4" />
+  <button note="0x34" value="127" name="SYNC4" deck="4" channel="4" />
+  
+</device>

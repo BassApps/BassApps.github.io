@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper device="MIDIHub Port 1" version="666" date="2016-04-01">
+	<map value="PLAY1" action="deck 1 play_pause" />
+	<map value="CUE1" action="deck 1 cue" />
+	<map value="HEAR1" action="deck 1 pfl" />
+	<map value="CUE11" action="deck 1 hot_cue 1" />
+	<map value="CUE12" action="deck 1 hot_cue 2" />
+	<map value="CUE13" action="deck 1 hot_cue 3" />
+	<map value="CUE14" action="deck 1 hot_cue 4" />
+	<map value="CUE11d" action="deck 1 delete_cue 1" />
+	<map value="CUE12d" action="deck 1 delete_cue 2" />
+	<map value="CUE13d" action="deck 1 delete_cue 3" />
+	<map value="CUE14d" action="deck 1 delete_cue 4" />
+	<map value="JOG_A" action="deck 1 touchwheel" />
+	<map value="JOG_B" action="deck 2 touchwheel" />
+	<map value="FX1" action="deck 1 effect_activate 1 " />
+	<map value="FX1b" action="deck 1 effect_select +1" />
+	<map value="FX2" action="deck 2 effect_active 1 " />
+	<map value="FX2b" action="deck 2 effect_select +1" />
+	<map value="TMP1" action="deck 1 pitch" />
+	<map value="0-SLIDER84" action="deck 1 gain" />
+	<map value="Lf1" action="deck 1 var &apos;$fx1multi&apos; ? param_smaller 5% ? effect 1 active off &amp; effect_slider 1 1 : effect 1 active on &amp; effect_slider 1 1 : effect slider 1" />
+	<map value="L1" action="deck 1 eq_high" />
+	<map value="L2" action="deck 1 eq_mid" />
+	<map value="L3" action="deck 1 eq_low" />
+	<map value="0-SLIDER73" action="crossfader" />
+	<map value="F1" action="deck 1 filter" />
+	<map value="Lf2" action="deck 1 var &apos;$fx1multi&apos; ? param_smaller 5% ? effect 2 active off &amp; effect_slider 2 1 : effect 2 active on &amp; effect_slider 2 1 : effect slider 2" />
+	<map value="VOL1" action="deck 1 level" />
+	<map value="BROWSE_DN" action="browser_scroll +1" />
+	<map value="BROWSE_UP" action="browser_scroll -1" />
+	<map value="0-BUTTON68" action="browser_window &apos;folders,songs&apos;" />
+	<map value="BROWSE_A" action="deck 1 load" />
+	<map value="BROWSE_B" action="deck 2 load" />
+	<map value="Lf3" action="deck 1 var &apos;$fx1multi&apos; ? param_smaller 5% ? effect 3 active off &amp; effect_slider 3 1 : effect 3 active on &amp; effect_slider 3 1 : effect_slider 3" />
+	<map value="PLAY2" action="deck 2 play_pause" />
+	<map value="CUE2" action="deck 2 cue" />
+	<map value="0-BUTTON52" action="deck 2 sync" />
+	<map value="CUE21" action="deck 2 hot_cue 1" />
+	<map value="CUE22" action="deck 2 hot_cue 2" />
+	<map value="CUE23" action="deck 2 hot_cue 3" />
+	<map value="CUE24" action="deck 2 hot_cue 4" />
+	<map value="CUE21d" action="deck 2 delete_cue 1" />
+	<map value="CUE22d" action="deck 2 delete_cue 2" />
+	<map value="CUE23d" action="deck 2 delete_cue 3" />
+	<map value="CUE24d" action="deck 2 delete_cue 4" />
+	<map value="F2" action="deck 2 filter" />
+	<map value="0-SLIDER84" action="deck 2 gain" />
+	<map value="HEAR2" action="deck 2 pfl" />
+	<map value="TMP2" action="deck 2 pitch" />
+	<map value="VOL2" action="deck 2 level" />
+	<map value="Rf3" action="var &apos;$fx1multi&apos; ? param_smaller 5% ? effect 3 active off &amp; effect_slider 3 1 : effect 3 active on &amp; effect_slider 3 1 : effect_slider 3" />
+	<map value="Rf2" action="var &apos;$fx1multi&apos; ? param_smaller 5% ? effect 2 active off &amp; effect_slider 2 1 : effect 2 active on &amp; effect_slider 2 1 : effect slider 2" />
+	<map value="Rf1" action="var &apos;$fx1multi&apos; ? param_smaller 5% ? effect 1 active off &amp; effect_slider 1 1 : effect 1 active on &amp; effect_slider 1 1 : effect slider 1" />
+	<map value="R3" action="deck 2 eq_low" />
+	<map value="R2" action="deck 2 eq_mid" />
+	<map value="R1" action="deck 2 eq_high" />
+	<map value="1ENG" action="deck 1 loop " />
+	<map value="2ENG" action="deck 2 loop " />
+	<map value="FX1L" action="deck 1 effect_select -1" />
+	<map value="FX1R" action="deck 1 effect_select +1" />
+	<map value="FX2L" action="deck 2 effect_select -1" />
+	<map value="FX2R" action="deck 2 effect_select +1" />
+	<map value="1SIZ" action="param_greater 50% ? deck 1 loop_half : deck 1 loop_double" />
+	<map value="2SIZ" action="param_greater 50% ? deck 2 loop_half : deck 2 loop_double" />
+	<map value="KEY1" action="deck 1 key_lock" />
+	<map value="KEY2" action="deck 2 key_lock" />
+	<map value="LED_1ENG" action="deck 1 loop ? on : off" />
+	<map value="LED_2ENG" action="deck 2 loop ? on : off" />
+	<map value="JOG_C" action="deck 3 touchwheel" />
+	<map value="JOG_D" action="deck 4 touchwheel" />
+	<map value="FX3" action="deck 3 effect_activate 1 " />
+	<map value="FX3b" action="deck 3 effect_select +1" />
+	<map value="FX4" action="deck 4 effect_active 1 " />
+	<map value="FX4b" action="deck 4 effect_select +1" />
+	<map value="TMP3" action="deck 3 pitch" />
+	<map value="Lf1b" action="deck 3 var &apos;$fx1multi&apos; ? param_smaller 5% ? effect 1 active off &amp; effect_slider 1 1 : effect 1 active on &amp; effect_slider 1 1 : effect slider 1" />
+	<map value="L1b" action="deck 3 eq_high" />
+	<map value="L2b" action="deck 3 eq_mid" />
+	<map value="L3b" action="deck 3 eq_low" />
+	<map value="0-SLIDER73" action="crossfader" />
+	<map value="F3" action="deck 3 filter" />
+	<map value="Lf2b" action="deck 3 var &apos;$fx1multi&apos; ? param_smaller 5% ? effect 2 active off &amp; effect_slider 2 1 : effect 2 active on &amp; effect_slider 2 1 : effect slider 2" />
+	<map value="VOL3" action="deck 3 level" />
+	<map value="0-BUTTON68" action="browser_window &apos;folders,songs&apos;" />
+	<map value="BROWSE_C" action="deck 3 load" />
+	<map value="BROWSE_D" action="deck 4 load" />
+	<map value="Lf3b" action="deck 3 var &apos;$fx1multi&apos; ? param_smaller 5% ? effect 3 active off &amp; effect_slider 3 1 : effect 3 active on &amp; effect_slider 3 1 : effect_slider 3" />
+	<map value="PLAY4" action="deck 4 play_pause" />
+	<map value="CUE4" action="deck 4 cue" />
+	<map value="0-BUTTON52" action="deck 4 sync" />
+	<map value="CUE41" action="deck 4 hot_cue 1" />
+	<map value="CUE42" action="deck 4 hot_cue 2" />
+	<map value="CUE43" action="deck 4 hot_cue 3" />
+	<map value="CUE44" action="deck 4 hot_cue 4" />
+	<map value="CUE41d" action="deck 4 delete_cue 1" />
+	<map value="CUE42d" action="deck 4 delete_cue 2" />
+	<map value="CUE43d" action="deck 4 delete_cue 3" />
+	<map value="CUE44d" action="deck 4 delete_cue 4" />
+	<map value="F4" action="deck 4 filter" />
+	<map value="0-SLIDER84" action="deck 4 gain" />
+	<map value="HEAR4" action="deck 4 pfl" />
+	<map value="TMP4" action="deck 4 pitch" />
+	<map value="VOL4" action="deck 4 level" />
+	<map value="Rf3b" action="var &apos;$fx1multi&apos; ? param_smaller 5% ? effect 3 active off &amp; effect_slider 3 1 : effect 3 active on &amp; effect_slider 3 1 : effect_slider 3" />
+	<map value="Rf2b" action="var &apos;$fx1multi&apos; ? param_smaller 5% ? effect 2 active off &amp; effect_slider 2 1 : effect 2 active on &amp; effect_slider 2 1 : effect slider 2" />
+	<map value="Rf1b" action="var &apos;$fx1multi&apos; ? param_smaller 5% ? effect 1 active off &amp; effect_slider 1 1 : effect 1 active on &amp; effect_slider 1 1 : effect slider 1" />
+	<map value="R3b" action="deck 4 eq_low" />
+	<map value="R2b" action="deck 4 eq_mid" />
+	<map value="R1b" action="deck 4 eq_high" />
+	<map value="3ENG" action="deck 3 loop " />
+	<map value="4ENG" action="deck 4 loop " />
+	<map value="FX1L" action="deck 3 effect_select -1" />
+	<map value="FX1R" action="deck 3 effect_select +1" />
+	<map value="FX2L" action="deck 4 effect_select -1" />
+	<map value="FX2R" action="deck 4 effect_select +1" />
+	<map value="3SIZ" action="param_greater 50% ? deck 3 loop_half : deck 3 loop_double" />
+	<map value="4SIZ" action="param_greater 50% ? deck 4 loop_half : deck 4 loop_double" />
+	<map value="KEY3" action="deck 3 key_lock" />
+	<map value="KEY4" action="deck 4 key_lock" />
+	<map value="LED_3ENG" action="deck 3 loop ? on : off" />
+	<map value="LED_4ENG" action="deck 4 loop ? on : off" />
+	<map value="PLAY3" action="deck 3 play_pause" />
+	<map value="CUE3" action="deck 3 cue" />
+	<map value="HEAR3" action="deck 3 pfl" />
+	<map value="CUE31" action="deck 3 hot_cue 1" />
+	<map value="CUE32" action="deck 3 hot_cue 2" />
+	<map value="CUE33" action="deck 3 hot_cue 3" />
+	<map value="CUE34" action="deck 3 hot_cue 4" />
+	<map value="CUE31d" action="deck 3 delete_cue 1" />
+	<map value="CUE32d" action="deck 3 delete_cue 2" />
+	<map value="CUE33d" action="deck 3 delete_cue 3" />
+	<map value="CUE34d" action="deck 3 delete_cue 4" />
+	<map value="BROWSE_NV" action="param_greater 50% ? browser_folder : browser_enter" />
+	<map value="CROSSFADER" action="crossfader" />
+	<map value="SYNC1" action="deck 1 sync" />
+	<map value="SYNC2" action="deck 2 sync" />
+	<map value="SYNC3" action="deck 3 sync" />
+	<map value="SYNC4" action="deck 4 sync" />
+</mapper>

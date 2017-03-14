@@ -1,0 +1,649 @@
+<!doctype html>
+<!--
+	Let's just give some credit here. 
+	Template:	 Unika - Responsive One Page HTML5 Template
+	Author:		 imransdesign.com
+	URL:		 http://imransdesign.com/
+    Designed By: https://www.behance.net/poljakova
+	Version:	1.0	
+-->
+<html lang="en-US">
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Bassapps mobile apps by Alexander Nowak</title>
+		<meta name="description" content="Bassapps mobile apps by Alexander Nowak. Launch Buttons, VirtualDJ & Traktor Kontrol, Maschine Scene Selector. How to connect & troubleshooting.">
+		<meta name="keywords" content="App Store, Play Store, Traktor, Ableton, Launchpad, Apps, NI Maschine" />
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Google Fonts  -->
+		<link href='//fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'> <!-- Body font -->
+		<link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'> <!-- Navbar font -->
+
+		<!-- Libs and Plugins CSS -->
+		<link rel="stylesheet" href="inc/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="inc/animations/css/animate.min.css">
+		<link rel="stylesheet" href="inc/font-awesome/css/font-awesome.min.css"> <!-- Font Icons -->
+		<link rel="stylesheet" href="inc/owl-carousel/css/owl.carousel.css">
+		<link rel="stylesheet" href="inc/owl-carousel/css/owl.theme.css">
+
+		<!-- Theme CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mobile.css">
+
+		<!-- Skin CSS -->
+		<!-- <link rel="stylesheet" href="css/skin/cool-gray.css"> -->
+		<link rel="stylesheet" href="css/skin/bassapps-gray.css">
+        <!-- <link rel="stylesheet" href="css/skin/ice-blue.css"> -->
+        <!-- <link rel="stylesheet" href="css/skin/summer-orange.css"> -->
+        <!-- <link rel="stylesheet" href="css/skin/fresh-lime.css"> -->
+        <!-- <link rel="stylesheet" href="css/skin/night-purple.css"> -->
+        
+        
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=6" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=6" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#990000">
+<meta name="apple-mobile-web-app-title" content="Bassapps.de">
+<meta name="application-name" content="Bassapps.de">
+<meta name="theme-color" content="#ffffff">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63379605-1', 'auto');
+  ga('send', 'pageview');
+
+</script>"	</head>
+
+
+ <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+		@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+[class^="entypo-"]:before {
+	font-family: 'entypo', sans-serif;
+}
+
+#social-sidebar {
+	left: 0;
+	position: fixed;
+	top: 40%;
+	
+}
+
+
+#social-sidebar li:first-child a { border-top-right-radius: 5px; }
+#social-sidebar li:last-child a { border-bottom-right-radius: 5px; }
+
+#social-sidebar a {
+	background: rgba(0, 0, 0, .7);
+	color: #fff;
+  text-decoration: none;
+	display: block;
+	height: 50px;
+	width: 50px;  
+	font-size: 24px;
+	line-height: 50px;
+	position: relative;
+	text-align: center;
+  cursor: pointer;
+  	
+}
+
+#social-sidebar a:hover span {
+	left: 120%;
+	opacity: 1;
+}
+
+#social-sidebar a span {
+  font: 12px "Open Sans", sans-serif;
+  text-transform: uppercase;
+	border-radius: 3px;
+	line-height: 24px;
+	left: -100%;
+	margin-top: -16px;
+	opacity: 0;
+	padding: 4px 8px;
+	position: absolute;
+	transition: opacity .3s, left .4s;
+	top: 50%;
+	z-index: -1;
+}
+
+#social-sidebar a span:before {
+	content: "";
+	display: block;
+	height: 8px;
+  width: 8px;
+	left: -4px;
+	margin-top: -4px;
+	position: absolute;
+	top: 50%;
+	transform: rotate(45deg);
+}
+
+#social-sidebar a[class*="twitter"]:hover,
+#social-sidebar a[class*="twitter"] span,
+#social-sidebar a[class*="twitter"] span:before {background: #00aced;}
+
+#social-sidebar a[class*="facebook"]:hover,
+#social-sidebar a[class*="facebook"] span,
+#social-sidebar a[class*="facebook"] span:before {background: #3B5998;}
+
+#social-sidebar a[class*="gplus"]:hover,
+#social-sidebar a[class*="gplus"] span,
+#social-sidebar a[class*="gplus"] span:before {background: #E34429;}
+
+#social-sidebar a[class*="dribbble"]:hover,
+#social-sidebar a[class*="dribbble"] span,
+#social-sidebar a[class*="dribbble"] span:before {background: #ea4c89;}
+
+#social-sidebar a[class*="dropbox"]:hover,
+#social-sidebar a[class*="dropbox"] span,
+#social-sidebar a[class*="dropbox"] span:before {background: #8DC5F2;}
+
+#social-sidebar a[class*="github"]:hover,
+#social-sidebar a[class*="github"] span,
+#social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
+
+#social-sidebar a[class*="evernote"]:hover,
+#social-sidebar a[class*="evernote"] span,
+#social-sidebar a[class*="evernote"] span:before {background: #6BB130;}
+
+#social-sidebar a[class*="youtube"]:hover,
+#social-sidebar a[class*="youtube"] span,
+#social-sidebar a[class*="youtube"] span:before {background: #E34429;}
+
+    </style> 
+    <body data-spy="scroll" data-target="#main-navbar">
+        <div class="page-loader"></div>  <!-- Display loading image while page loads -->
+    	<div class="body">
+    	
+    	
+    	
+    	
+    	
+        
+            <!--========== BEGIN HEADER ==========-->
+            <header id="header" class="header-main">
+
+ 
+
+                <!-- Begin Navbar -->
+                <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation"> <!-- Classes: navbar-default, navbar-inverse, navbar-fixed-top, navbar-fixed-bottom, navbar-transparent. Note: If you use non-transparent navbar, set "height: 98px;" to #header -->
+
+<nav id="social-sidebar">
+			<ul>
+				<li>
+					<a href="https://www.facebook.com/BassApps/"  class="fa fa-facebook" target="_blank">
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/c/BassappsDeutschland" class="fa fa-youtube-play" target="_blank">
+						<span>YouTube</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+                  <div class="container">
+                  
+      
+            
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand page-scroll" href="index.html">BASSAPPS</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a class="page-scroll" href="body">Home</a></li>
+                        <!--    <li><a class="page-scroll" href="#about-section">About</a></li> -->
+                            <li><a class="page-scroll" href="#services-section">Products</a></li>
+                            <li><a class="page-scroll" href="#social-section">Social</a></li>
+                        <!--    <li><a class="page-scroll" href="#team-section">Team</a></li>                            
+                            <li><a class="page-scroll" href="#prices-section">Prices</a></li> -->
+                            <li><a class="page-scroll" href="#contact-section">Contact</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container -->
+                </nav>
+                <!-- End Navbar -->
+
+            </header>
+            <!-- ========= END HEADER =========-->
+            
+            
+            
+            <!-- style="background-image: url(img/slider-t-comp.jpg);
+            
+        	<!-- Begin text carousel intro section class="parallax" 			<section id="text-carousel-intro-section" style="background-image: url(img/slider-t-comp.jpg);background-attachment:fixed; @media only screen and (max-width : 767px) {background-attachment: scroll;}background-size: cover; "> -->
+			<section id="text-carousel-intro-section" class="parallax" style="background-image: url(img/slider-t-comp.jpg);">
+				
+				<div class="container">
+					<div class="caption text-center text-white" data-stellar-ratio="0.7">
+						<div id="owl-intro-text" class="owl-carousel">
+							<div class="item">
+								<h1>Welcome to BassApps</h1>
+								<p>Android & iOS Audio/MIDI Apps by Alexander Nowak</p>
+                                <div class="extra-space-l"></div>
+								<a class="btn btn-blank page-scroll" href="#services-section" role="button">Learn More</a> 
+							</div>
+						</div>
+					</div> <!-- /.caption -->
+				</div> <!-- /.container -->
+
+			</section>
+			<!-- End text carousel intro section -->
+            
+            <!-- Begin Services -->
+            <section id="services-section" class="page text-center">
+            
+       
+           
+            <!-- wrap dark shiet       fuck i have no idea how to do this-->
+            <div class="services-wrapper">
+             
+                <!-- Begin page header-->
+                <div class="page-header-wrapper">
+                    <div class="container">
+                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                            <h2>Products</h2>
+                            <div class="devider"></div>
+                            <p class="subtitle">all Apps available for Android and iOS</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End page header-->
+            
+                <!-- Begin roatet box-2 -->
+                <div class="rotate-box-2-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <a href="launch.html" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0">
+                                    <span class="rotate-box-icon">
+                                    
+                                  <!--  <i class="fa fa-mobile"></i> -->
+                                  
+                                    <img src="img/icon/launchplus256.jpg" class="img-responsive" alt="img">
+
+                                    </span>
+                                   
+                                    <div class="rotate-box-info">
+                                        <h4>Launch Buttons</h4>
+                                        <p>Control Ableton and play insane lightshows!</p>
+                                    </div>
+                                </a>
+                            </div>
+            
+                            <div class="col-md-3 col-sm-6">
+                                <a href="kontrol.html" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.1s">
+                                    <span class="rotate-box-icon">
+                                    
+                                  <!--  <i class="fa fa-mobile"></i> -->
+                                  
+                                    <img src="img/icon/kontrol512.png" class="img-responsive" alt="img">
+
+                                    </span>
+                                    <div class="rotate-box-info">
+                                        <h4>Kontrol</h4>
+                                        <p>#1 MIDI Controller for DJ applications on the Play Store!</p>
+                                    </div>
+                                </a>
+                            </div>
+            
+                            <div class="col-md-3 col-sm-6">
+                                <a href="scene.html" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.2s">
+                                    <span class="rotate-box-icon">
+                                    
+                                  <!--  <i class="fa fa-mobile"></i> -->
+                                  
+                                    <img src="img/icon/sceneselector256.png" class="img-responsive" alt="img">
+
+                                    </span>
+                                   
+                                    <div class="rotate-box-info">
+                                        <h4>Maschine Scene Selector</h4>
+                                        <p>Additional interface for every NI Maschine. Select scenes without interrupting your live set!</p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-md-3 col-sm-6">
+                                <a href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.3s">
+                                    <span class="rotate-box-icon">
+                                    
+                                  <!--  <i class="fa fa-mobile"></i> -->
+                                  
+                                    <img src="img/icon/musikmaker256.png" class="img-responsive" alt="img">
+
+                                    </span>
+                                    <div class="rotate-box-info">
+                                        <h4>?</h4>
+                                        <p>Some new stuff coming in 2017 :)</p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+                    
+                    <div class="container"> 
+                        <!-- Cta Button -->
+                        <div class="extra-space-l"> <p class="subtitle">Check out all my products on the</p></div>
+                        
+                        <div class="text-center">
+                    		<a class="btn btn-default btn-lg" href="https://itunes.apple.com/us/developer/alexander-nowak/id942090166" target="_blank" role="button"><i class="fa fa-apple"></i> Store </a>
+                    		
+                    		<a class="btn btn-default btn-lg" href="https://play.google.com/store/apps/dev?id=6484566594998218918&hl=en" target="_blank" role="button"><i class="fa fa-play"></i> Store</a>
+                        </div>
+                    </div> <!-- /.container -->                       
+                </div>
+                <!-- End rotate-box-2 -->
+                
+                 </div> <!-- end dark wrap -->
+                
+            </section>
+            <!-- End Services -->
+              
+           
+            <!-- Begin counter up parallax-->
+            <section id="counter-section">                					
+				<div id="counter-up-trigger" class="counter-up text-white parallax" style="background-image: url(img/counter-bg-co.jpg);">
+					
+                    <!-- <div class="cover"></div>Begin page header-->
+                    <div class="page-header-wrapper">
+                        <div class="container">
+                            <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                                <h2>Some bragging</h2>
+                                <div class="devider"></div>
+                                <p class="subtitle">Before anyone is not told</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End page header-->
+					<div class="container">
+
+						<div class="row">
+
+							<div class="fact text-center col-md-3 col-sm-6">
+								<div class="fact-inner">
+									<i class="fa fa-users fa-3x"></i>
+                                    <div class="extra-space-l"></div>
+									<span class="counter2">>1m</span>
+
+									<p class="lead">Downloads</p>
+								</div>
+							</div>
+
+
+							<div class="fact text-center col-md-3 col-sm-6">
+								<div class="fact-inner">
+									<i class="fa fa-star fa-3x"></i>
+                                    <div class="extra-space-l"></div>
+									<span class="counter2">>7000</span>
+									<p class="lead">Ratings</p>
+								</div>
+							</div>
+
+<div class="fact text-center col-md-3 col-sm-6">
+								<div class="fact-inner">
+									<i class="fa fa-square fa-3x"></i>
+                                    <div class="extra-space-l"></div>
+									<span class="counter2">>20</span>
+									<p class="lead">Apps on Play / App Store</p>
+								</div>
+							</div>
+
+							<div class="fact last text-center col-md-3 col-sm-6">
+								<div class="fact-inner">
+									<i class="fa fa-laptop fa-3x"></i>
+                                    <div class="extra-space-l"></div>
+									<span class="counter2">1</span>
+									<p class="lead">Developer</p>
+								</div>
+							</div>
+
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div>
+            </section>
+			<!-- End counter up -->
+            
+                
+            <!-- Begin social section -->
+			<section id="social-section">
+            
+                 <!-- Begin page header-->
+                <div class="page-header-wrapper">
+                    <div class="container">
+                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                            <h2>Follow me</h2>
+                            <div class="devider"></div>
+                            <p class="subtitle">Get notified on every update</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End page header-->
+                
+                <div class="container">
+                	<ul class="social-list">
+                		<li> <a href="https://www.facebook.com/BassApps/" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.3s" target="_blank"><span class="rotate-box-icon"><i class="fa fa-facebook"></i></span></a></li>
+                		<li> <a href="https://www.youtube.com/c/BassappsDeutschland" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.4s" target="_blank"><span class="rotate-box-icon"><i class="fa fa-youtube-play"></i></span></a></li>
+                   </ul>
+                </div>
+                
+            </section>
+            <!-- End social section<section id="contact-section" class="page text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/map-bg.jpg);">
+            -->
+            <!-- Begin contact section parallax-->
+			<section id="contact-section" class="page text-white parallax" style="background-image: url(img/map-bg.jpg); ">
+            
+            
+                 <!-- <div class="cover"></div> Begin page header-->
+                <div class="page-header-wrapper">
+                    <div class="container">
+                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                            <h2>Contact</h2>
+                            <div class="devider"></div>
+                            <p class="subtitle">Most of the time I am happy to help</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End page header-->
+                
+                <div class="contact wow bounceInRight" data-wow-delay="0.4s">
+                    <div class="container">
+                    	<div class="row">
+                        
+                            <div class="col-sm-6">
+                                <div class="contact-info">
+                                    <h4>My Address</h4>
+                                    
+                                    <ul class="contact-address">
+			                            <li><p class="big">Please only contact me in either English or German.<br> <br> If you have any questions, concerns, feedback [...] or if you are just bored 
+and you want to send me pictures of pandas, feel free to contact me. 
+I'm glad to help. Also, I really love pandas.</p></li> <br>
+			                            <li><i class="fa fa-phone"></i>&nbsp; +49 1522 8917 955</li>
+			                            <li><i class="fa fa-envelope"></i> mss.geoteach@gmail.com</li>
+			                            <li><i class="fa fa-map-marker fa-lg"></i>&nbsp; Kaiser-Friedrich-Straße 133,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D-14469 Potsdam,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Germany</li>
+			                           
+			                        </ul>
+                                </div>
+                            </div>
+                        
+                        	<div class="col-sm-6">
+                                <div class="contact-form">
+                                	<h4>What to include in your email</h4>
+                                    
+                                    <p> It will make it easier and faster for both of us if you include </p>
+                                     <ul class="contact-address">
+                                    <li><i class="fa fa-chevron-right"></i> the type of device you are using (e.g. Android phone or iPad)  </li>
+                                    <li><i class="fa fa-chevron-right"></i> the app you are talking about (e.g. Kontrol or Launch Buttons) </li>
+                                    <li><i class="fa fa-chevron-right"></i> your computer's operating system (e.g. Windows 10 or macOS Sierra) </li>
+                                    <li><i class="fa fa-chevron-right"></i> what exactly is not working (e.g. you can't get past a step in the instructions) </li>
+                                     </ul>
+                                    
+                                </div>	
+                            </div>
+                                                                                
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+                </div>
+            </section>
+            <!-- End contact section -->
+                   
+           
+            <footer class="text-off-white">
+            
+                <div class="footer-top">
+                	<div class="container">
+                    	<div class="row wow bounceInLeft" data-wow-delay="0.4s">
+
+                            <div class="col-sm-6 col-md-4">
+                            	<h4>Useful Links</h4>
+                                <ul class="imp-links">
+                                	<li><a href="troubleshooting.html">Troubleshooting</a></li>
+                                	<li><a href="media.html">Media</a></li>
+                                	<li><a href="imprint.html">Impressum</a></li>
+                                	<li><a href="privacy.html">Privacy policy</a></li>
+                                </ul>
+                            </div>
+                        
+                        <!--	<div class="col-sm-6 col-md-4">
+                                <h4>Subscribe</h4>
+                            	<div id="footer_signup">
+                                    <div id="email">
+                                        <form id="subscribe" method="POST">
+                                            <input type="text" placeholder="Enter email address" name="email" id="address" data-validate="validate(required, email)"/>
+                                            <button type="submit">Submit</button>
+                                            <span id="result" class="section-description"></span>
+                                        </form> 
+                                    </div>
+                                </div> 
+                                <p>Subscribe to my newsletter to get notified whenever something irrelevant happens or when you 
+                                feel like getting spammed with Polish viagra ads.</p> 
+                            </div> <div class="updates-box"> </div> -->
+
+							<div class="col-sm-12 col-md-4 updates-box">
+							
+                                <h4>Updates</h4>
+                                	<div class="single-tweet">
+                                		<p>November 22nd: Kontrol 0.95 for Android released, adding USB connectivity </p>
+                                	</div>
+                                	<div class="single-tweet">
+                                		<p>November 3rd: Launch Buttons 2.016 for Android released (former paid version for Android now free)</p>
+                                	</div>
+                                	<div class="single-tweet">
+                                		<p>October 31st: Launch Buttons Plus 2.016 for Android released </p>
+                                	</div>
+                                	<div class="single-tweet">
+                                		<p>October 26th: Launch Buttons Plus 2.015 for Android released (beta)</p>
+                                	</div>
+                                	<div class="single-tweet">
+                                		<p>October 25th: Kontrol 0.95 for iOS released </p>
+                                	</div>
+                                	<div class="single-tweet">
+                                		<p>September 9th: Former paid version of Launch Buttons for iOS is now free </p>
+                                	</div>
+                                	<div class="single-tweet">
+                                		<p>September 8th: released Launch Buttons Plus 2.016 for iOS, 16 more buttons and all the colors </p>
+                                	</div>
+                            
+                            </div>
+
+                            <div class="col-sm-12 col-md-4">
+                                <h4>Roadmap</h4>
+                                <div class="single-tweet">
+                                    <div class="tweet-content"><p class="text-other">Kontrol & Launch Buttons</p>: Reaaallly cool suprise coming, will be kinda big maybe <3</div>
+                                    <div class="tweet-date">ETA: February</div>
+                                </div>
+                                <div class="single-tweet">
+                                    <div class="tweet-content"><p class="text-other">Launch Buttons & Scene Selector</p>: USB connectivity in the way it works in Kontrol. </div>
+                                    <div class="tweet-date">ETA: February</div>
+                                </div>
+                                
+                                
+                            </div>
+                            
+                        </div>
+                    </div> 
+                </div>
+                
+                <div class="footer">
+                    <div class="container text-center wow fadeIn" data-wow-delay="0.4s">
+                     <!--   <p class="copyright">Copyright &copy; 2015 - Designed By <a href="https://www.behance.net/poljakova" class="theme-author">Veronika Poljakova</a> &amp; Developed by <a href="http://www.imransdesign.com/" class="theme-author">Imransdesign</a></p> -->
+                     <p class="copyright">Still have no idea what all that copyright shit is about but let's just put a &copy; 2016 there and tell you that I ripped off this more than awesome website from <a href="http://www.imransdesign.com/" target="_blank" class="theme-author">Imransdesign</a></p>
+                     <p class="copyright">Maybe using cookies I have no idea and also some Google and other company's tracking stuff but man 
+                     just be told that you are selling your soul while visiting this website. </p>
+              <!--    <br>     <p class="copyright"><a href="imprint.html">Impressum</a> and <a href="imprint.html">privacy policy</a>.</p> -->
+                    
+                    </div>
+                </div>
+
+            </footer>
+
+
+            <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> <!-- Scroll to top button -->
+                                              
+        </div><!-- body ends -->
+        
+        <!-- Plugins JS -->
+		<script src="inc/jquery/jquery-1.11.1.min.js"></script>
+		<script src="inc/bootstrap/js/bootstrap.min.js"></script>
+		<script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
+		<!-- <script src="inc/stellar/js/jquery.stellar.min.js"></script> -->
+	<!--	<script src="inc/animations/js/wow.min.js"></script> -->
+        <script src="inc/waypoints.min.js"></script>
+		<script src="inc/isotope.pkgd.min.js"></script>
+		<script src="inc/classie.js"></script>
+		<script src="inc/jquery.easing.min.js"></script>
+		<script src="inc/jquery.counterup.min.js"></script>
+
+
+
+		<script src="js/theme.js"></script>
+		<script src="js/expbut.js"></script>
+		
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63379605-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    </body> 
+        
+            
+</html>
